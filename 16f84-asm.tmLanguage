@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>fileTypes</key>
+		<array>
+			<string>asm</string>
+			<string>inc</string>
+		</array>
+		<key>name</key>
+		<string>Assembly - PIC16F84A</string>
+		<key>patterns</key>
+		<array>
+
+
+			<dict>
+				<key>comment</key>
+				<string>Methods from libraries</string>
+				<key>match</key>
+				<string>(?i)\b#define(\s|\t*)\b</string>
+				<key>name</key>
+				<string>meta.function-call.asm</string>
+			</dict>
+
+			<dict>
+				<key>comment</key>
+				<string>General purpose register set</string>
+				<key>match</key>
+				<string>(?i)\br(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31)\b</string>
+				<key>name</key>
+				<string>storage.type.asm</string>
+			</dict>
+
+			<dict>
+				<key>comment</key>
+				<string>General data type</string>
+				<key>match</key>
+				<string>\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)\b</string>
+				<key>name</key>
+				<string>storage.type.asm</string>
+			</dict>
+
+			<dict>
+				<key>comment</key>
+				<string>General constants</string>
+				<key>match</key>
+				<string>(?i)\b(equ|status|trisa|trisb|porta|portb|w|l|f|c)\b</string>
+				<key>name</key>
+				<string>keyword.operator.arithmetic.asm</string>
+			</dict>
+
+			<dict>
+				<key>comment</key>
+				<string>Add instruction mnemonics</string>
+				<key>match</key>
+				<string>(?i)\b(addwf|addlw)\b</string>
+				<key>name</key>
+				<string>keyword.operator.arithmetic.asm</string>
+			</dict>
+			<dict>
+				<key>comment</key>
+				<string>AND instruction mnemonics</string>
+				<key>match</key>
+				<string>(?i)\b(andwf|andlw)\b</string>
+				<key>name</key>
+				<string>keyword.operator.word.asm</string>
+			</dict>
+
+			<dict>
+				<key>comment</key>
+				<string>Clear file register instruction mnemonic</string>
+				<key>match</key>
+				<string>(?i)\b(clrf)\b</string>
+				<key>name</key>
+				<string>keyword.operator.asm</string>
+			</dict>
+
+			<dict>
+				<key>comment</key>
+				<string>Clear working register instruction mnemonic</string>
+				<key>match</key>
+				<string>(?i)\b(clrw)\b</string>
+				<key>name</key>
+				<string>keyword.operator.asm</string>
+			</dict>
+
+			<dict>
+				<key>comment</key>
+				<string>Complement file register instruction mnemonic</string>
+				<key>match</key>
+				<string>(?i)\b(comf)\b</string>
+				<key>name</key>
+				<string>keyword.operator.asm</string>
+			</dict>
+			<dict>
+				<key>comment</key>
+				<string>Decrement file register instruction mnemonic</string>
+				<key>match</key>
+				<string>(?i)\b(decf|decfsz)\b</string>
+				<key>name</key>
+				<string>keyword.operator.asm</string>
+			</dict>
+			<dict>
+				<key>comment</key>
+				<string>Increment file register instruction mnemonic</string>
+				<key>match</key>
+				<string>(?i)\b(incf|incfsz)\b</string>
+				<key>name</key>
+				<string>keyword.operator.arithmetic.asm</string>
+			</dict>
+			<dict>
+				<key>comment</key>
+				<string>Inclusive OR instruction mnemonics</string>
+				<key>match</key>
+				<string>(?i)\b(iorwf|iorlw)\b</string>
+				<key>name</key>
+				<string>keyword.operator.word.asm</string>
+			</dict>
+			<dict>
+				<key>comment</key>
+				<string>Move instruction mnemonics</string>
+				<key>match</key>
+				<string>(?i)\b(movf|movwf|movlw)\b</string>
+				<key>name</key>
+				<string>keyword.operator.asm</string>
+			</dict>
+			<dict>
+				<key>comment</key>
+				<string>No operation instruction mnemonic</string>
+				<key>match</key>
+				<string>(?i)\b(nop)\b</string>
+				<key>name</key>
+				<string>keyword.operator.word.asm</string>
+			</dict>
+
+
+			<dict>
+				<key>comment</key>
+				<string>Rotate left and right instruction mnemonics</string>
+				<key>match</key>
+				<string>(?i)\b(rlf|rrf)\b</string>
+				<key>name</key>
+				<string>keyword.operator.asm</string>
+			</dict>
+			<dict>
+				<key>comment</key>
+				<string>Subtract instruction mnemonics</string>
+				<key>match</key>
+				<string>(?i)\b(sub|subi)</string>
+				<key>name</key>
+				<string>keyword.operator.arithmetic.asm</string>
+			</dict>
+
+			<dict>
+				<key>comment</key>
+				<string>Operadores de control en ASM.</string>
+				<key>name</key>
+				<string>keyword.control.asm</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#FF8C00</string>
+				</dict>
+				<key>uuid</key>
+				<string>2E7D54D4-C2F8-4E70-9C7D-F0C22B05D8B4</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>(?i)\b(call|return|goto|ret(f|i|lw)|sleep)</string>
+				<key>name</key>
+				<string>keyword.control.asm</string>
+			</dict>
+
+			<dict>
+				<key>match</key>
+				<string>(?i)\b(LIST|end|org)</string>
+				<key>name</key>
+				<string>keyword.control.asm</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>(?i)\b(include)</string>
+				<key>name</key>
+				<string>keyword.control.import.asm</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>(?i)\b(subwf|swapf|xorwf)</string>
+				<key>name</key>
+				<string>keyword.control.asm</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>(?i)\b(BCF|BSF|BTFSC|BTFSS|clrwdt|if)</string>
+				<key>name</key>
+				<string>keyword.control.conditional.asm</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>(?i)\b(addwf|andwf|comf|decf|decfsz|incf|incfsz|iorwf|movf|movwf|nop|rlf|rrf|subwf|swapf|xorwf)</string>
+				<key>name</key>
+				<string>keyword.arithmetic.asm</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>(?i)\b(BCF|BSF|BTFSC|BTFSS)</string>
+				<key>name</key>
+				<string>keyword.bitwise.asm</string>
+			</dict>
+			<dict>
+				<key>match</key>
+				<string>(?i)\b(addlw|andlw|iorlw|movlw|sublw|xorlw)</string>
+				<key>name</key>
+				<string>keyword.literal.asm</string>
+			</dict>
+
+
+			<dict>
+				<key>comment</key>
+				<string>Comment line</string>
+				<key>match</key>
+				<string>(//|;)(\s|\S)*</string>
+				<key>name</key>
+				<string>comment.line.asm</string>
+			</dict>
+			<dict>
+				<key>begin</key>
+				<string>(/\*)</string>
+				<key>comment</key>
+				<string>C-style comment block (AVR ASM 2.0 only)</string>
+				<key>end</key>
+				<string>(\*/)</string>
+				<key>name</key>
+				<string>comment.block.asm</string>
+			</dict>
+			<dict>
+				<key>comment</key>
+				<string>Single-line string</string>
+				<key>match</key>
+				<string>(^|\s)"[\w\s\W]*"($|\s)</string>
+				<key>name</key>
+				<string>string.asm</string>
+			</dict>
+			<dict>
+				<key>comment</key>
+				<string>Single-line string</string>
+				<key>match</key>
+				<string>(^|\s)\'[\w\s\W]*\'($|\s)</string>
+				<key>name</key>
+				<string>string.asm</string>
+			</dict>
+		</array>
+		<key>scopeName</key>
+		<string>source.asm</string>
+		<key>uuid</key>
+		<string>97b6acae-cfc1-4c14-b572-c51987e1e023</string>
+	</dict>
+</plist>
