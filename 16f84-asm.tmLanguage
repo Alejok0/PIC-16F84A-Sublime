@@ -8,19 +8,9 @@
 			<string>inc</string>
 		</array>
 		<key>name</key>
-		<string>Assembly - PIC16F84A</string>
+		<string>PIC16F84A-Assembly</string>
 		<key>patterns</key>
 		<array>
-
-
-			<dict>
-				<key>comment</key>
-				<string>Methods from libraries</string>
-				<key>match</key>
-				<string>(?i)\b#define(\s|\t*)\b</string>
-				<key>name</key>
-				<string>meta.function-call.asm</string>
-			</dict>
 
 			<dict>
 				<key>comment</key>
@@ -173,9 +163,15 @@
 
 			<dict>
 				<key>match</key>
-				<string>(?i)\b(LIST|end|org)</string>
+				<string>(?i)\b(LIST|cblock|end(c)|org)</string>
 				<key>name</key>
 				<string>keyword.control.asm</string>
+			</dict>
+			<dict>
+			<key>match</key>
+				<string>(?i)#define</string>
+				<key>name</key>
+				<string>constant.other.placeholder.asm</string>
 			</dict>
 			<dict>
 				<key>match</key>

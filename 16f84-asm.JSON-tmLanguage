@@ -1,0 +1,368 @@
+{
+	"plist": {
+		"dict": {
+			"key": [
+				"fileTypes",
+				"name",
+				"patterns",
+				"scopeName",
+				"uuid"
+			],
+			"array": [
+				{
+					"string": [
+						"asm",
+						"inc"
+					]
+				},
+				{
+					"dict": [
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"General purpose register set",
+								"(?i)\\br(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31)\\b",
+								"storage.type.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"General data type",
+								"\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)\\b",
+								"storage.type.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"General constants",
+								"(?i)\\b(equ|status|trisa|trisb|porta|portb|w|l|f|c)\\b",
+								"keyword.operator.arithmetic.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Add instruction mnemonics",
+								"(?i)\\b(addwf|addlw)\\b",
+								"keyword.operator.arithmetic.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"AND instruction mnemonics",
+								"(?i)\\b(andwf|andlw)\\b",
+								"keyword.operator.word.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Clear file register instruction mnemonic",
+								"(?i)\\b(clrf)\\b",
+								"keyword.operator.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Clear working register instruction mnemonic",
+								"(?i)\\b(clrw)\\b",
+								"keyword.operator.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Complement file register instruction mnemonic",
+								"(?i)\\b(comf)\\b",
+								"keyword.operator.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Decrement file register instruction mnemonic",
+								"(?i)\\b(decf|decfsz)\\b",
+								"keyword.operator.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Increment file register instruction mnemonic",
+								"(?i)\\b(incf|incfsz)\\b",
+								"keyword.operator.arithmetic.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Inclusive OR instruction mnemonics",
+								"(?i)\\b(iorwf|iorlw)\\b",
+								"keyword.operator.word.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Move instruction mnemonics",
+								"(?i)\\b(movf|movwf|movlw)\\b",
+								"keyword.operator.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"No operation instruction mnemonic",
+								"(?i)\\b(nop)\\b",
+								"keyword.operator.word.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Rotate left and right instruction mnemonics",
+								"(?i)\\b(rlf|rrf)\\b",
+								"keyword.operator.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Subtract instruction mnemonics",
+								"(?i)\\b(sub|subi)",
+								"keyword.operator.arithmetic.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"name",
+								"settings",
+								"uuid"
+							],
+							"string": [
+								"Operadores de control en ASM.",
+								"keyword.control.asm",
+								"2E7D54D4-C2F8-4E70-9C7D-F0C22B05D8B4"
+							],
+							"dict": {
+								"key": "foreground",
+								"string": "#FF8C00"
+							}
+						},
+						{
+							"key": [
+								"match",
+								"name"
+							],
+							"string": [
+								"(?i)\\b(call|return|goto|ret(f|i|lw)|sleep)",
+								"keyword.control.asm"
+							]
+						},
+						{
+							"key": [
+								"match",
+								"name"
+							],
+							"string": [
+								"(?i)\\b(LIST|cblock|end(c)|org)",
+								"keyword.control.asm"
+							]
+						},
+						{
+							"key": [
+								"match",
+								"name"
+							],
+							"string": [
+								"(?i)#define",
+								"constant.other.placeholder.asm"
+							]
+						},
+						{
+							"key": [
+								"match",
+								"name"
+							],
+							"string": [
+								"(?i)\\b(include)",
+								"keyword.control.import.asm"
+							]
+						},
+						{
+							"key": [
+								"match",
+								"name"
+							],
+							"string": [
+								"(?i)\\b(subwf|swapf|xorwf)",
+								"keyword.control.asm"
+							]
+						},
+						{
+							"key": [
+								"match",
+								"name"
+							],
+							"string": [
+								"(?i)\\b(BCF|BSF|BTFSC|BTFSS|clrwdt|if)",
+								"keyword.control.conditional.asm"
+							]
+						},
+						{
+							"key": [
+								"match",
+								"name"
+							],
+							"string": [
+								"(?i)\\b(addwf|andwf|comf|decf|decfsz|incf|incfsz|iorwf|movf|movwf|nop|rlf|rrf|subwf|swapf|xorwf)",
+								"keyword.arithmetic.asm"
+							]
+						},
+						{
+							"key": [
+								"match",
+								"name"
+							],
+							"string": [
+								"(?i)\\b(BCF|BSF|BTFSC|BTFSS)",
+								"keyword.bitwise.asm"
+							]
+						},
+						{
+							"key": [
+								"match",
+								"name"
+							],
+							"string": [
+								"(?i)\\b(addlw|andlw|iorlw|movlw|sublw|xorlw)",
+								"keyword.literal.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Comment line",
+								"(//|;)(\\s|\\S)*",
+								"comment.line.asm"
+							]
+						},
+						{
+							"key": [
+								"begin",
+								"comment",
+								"end",
+								"name"
+							],
+							"string": [
+								"(/\\*)",
+								"C-style comment block (AVR ASM 2.0 only)",
+								"(\\*/)",
+								"comment.block.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Single-line string",
+								"(^|\\s)\"[\\w\\s\\W]*\"($|\\s)",
+								"string.asm"
+							]
+						},
+						{
+							"key": [
+								"comment",
+								"match",
+								"name"
+							],
+							"string": [
+								"Single-line string",
+								"(^|\\s)\\'[\\w\\s\\W]*\\'($|\\s)",
+								"string.asm"
+							]
+						}
+					]
+				}
+			],
+			"string": [
+				"PIC16F84A-Assembly",
+				"source.asm",
+				"97b6acae-cfc1-4c14-b572-c51987e1e023"
+			]
+		},
+		"_version": "1.0"
+	}
+}
