@@ -9,6 +9,7 @@ PIC-16F84A-Sublime is [PIC16f84A](https://www.microchip.com/en-us/product/PIC16F
     ./16f84-asm.JSON-tmLanguage 	JSON syntax definition source
     ./16f84-asm.tmLanguage 	   	XML syntax definition for Sublime Text
     ./README.md 				This file with markdown markup
+    ./preview.png               This picture is a preview
 
 ### Installation ###
 
