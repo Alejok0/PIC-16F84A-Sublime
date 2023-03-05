@@ -1,2 +1,3 @@
 *.tmLanguage.cache
 .DS_Store
+preview.png export-ignore
